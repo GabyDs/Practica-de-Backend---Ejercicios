@@ -1,0 +1,10 @@
+<h3>Lista de Usuarios Registrados</h3>
+<ul>
+    {% for user in users.all %}
+        {% if user.rol == 1 %}
+            <li>Usuario: {{ user.username }} - Rol: Admin</id>
+        {% else %}
+            <li>Usuario: {{ user.username }} - Rol: Usuario</id>
+        {% endif %}
+    {% endfor %}
+</ul>
