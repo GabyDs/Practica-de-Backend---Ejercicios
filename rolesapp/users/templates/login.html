@@ -1,0 +1,11 @@
+<form action="{% url 'users:list_users' %}" method="post">
+    {% csrf_token %}
+    <fieldset>
+        <legend><h3>Login</h3></legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
